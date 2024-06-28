@@ -1,0 +1,26 @@
+ion-grid{
+  margin-top: 4%;
+}
+button{
+  background-color: transparent; /* Couleur de fond pour le bouton "All" */
+  border-radius: 24px; /* Bordures arrondies */
+  border: 2px solid #E5E5E5 !important;
+  padding: 10px 20px; /* Padding pour agrandir les boutons */
+  font-size: 16px; /* Taille du texte */
+  color: #171621; /* Couleur du texte */
+  border: none; /* Supprimer les bordures */
+  cursor: pointer; /* Curseur en forme de main */
+  margin: 5px; /* Espacement entre les boutons */
+  transition: background-color 0.3s
+}
+button.custom-button.active {
+  background-color: #15AB90; /* Fond pour le bouton actif */
+  color: white; /* Couleur du texte pour le bouton actif */
+  border: 1px solid #15AB90; /* Bordure pour le bouton actif */
+}
+.genre{
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+

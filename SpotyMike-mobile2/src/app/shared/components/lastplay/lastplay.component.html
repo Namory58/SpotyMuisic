@@ -1,0 +1,11 @@
+<ion-grid>
+  <div class="container">
+    @for (item of LastplaydedList.slice(0,4); track $index) {
+      <div class="grid">
+        <img [src]="item.image ||'assets/icon/img.png'" class="sapce-img" >
+        <span>{{item.artist.fullname}}</span>
+        <p class="artist-position">{{item.title}}</p>
+      </div>
+    }
+    </div>
+</ion-grid>

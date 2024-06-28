@@ -1,0 +1,41 @@
+<ion-content>
+  <div class="frist-navbar">
+    <ion-icon name="person-circle-outline"></ion-icon>
+    <ion-icon class="search" (click)="search()" name="search-outline"></ion-icon>
+  </div>
+  <div class="cadre">
+    <div class="album-card">
+      <div class="album-info">
+        <p class="album-type">New Album</p>
+        <h2 class="album-title">R & B Hits</h2>
+        <p class="album-description">Discover 87</p>
+        <div class="arrow">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="album-image">
+        <img class="img-s" src="assets/icon/img.png">
+      </div>
+    </div>
+  </div>
+  <div class="navbar-music-genre">
+    <p>Music Genres<button type="submit" class="show-All-genre">See All</button></p>
+    <app-music-genre></app-music-genre>
+  </div>
+  <div class="navbar-top-song">
+    <p>Tops Songs<button type="submit" class="show-All" (click)="showAllTopSong()">See All</button></p>
+    <app-crid></app-crid>
+  </div>
+  <div class="navbar-top-lasplayed">
+    <p>Last Played<button type="submit" class="show-All">See All</button></p>
+    <app-lastplay></app-lastplay>
+  </div>
+  <div class="navbar-gobal">
+    <p>Top Artists<button type="submit" class="show-All" (click)="showAllTopArtist()">See All</button></p>
+    <app-top-artists></app-top-artists>
+  </div>
+  <div class="navbar-gobal">
+    <p>Top album<button type="submit" class="show-All" (click)="showAllTopAlbum()">See All</button></p>
+   <app-top-album></app-top-album>
+  </div>
+</ion-content>

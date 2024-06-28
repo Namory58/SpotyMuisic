@@ -1,0 +1,51 @@
+.bg-transparent {
+  background: transparent;
+}
+form {
+  padding: 0 5%;
+  padding-top: 90%;
+  padding-bottom: 90%;
+
+  ion-list {
+    padding-bottom: 5%;
+    ion-label {
+      font-size: 1.1rem;
+      color: #a3a3a3;
+    }
+    ion-input {
+      border: 1px solid #E5E5E5 !important;
+      border-radius: 30px;
+      height: 4rem;
+      margin: 10px 0;
+      padding: 0 1px;
+      box-sizing: border-box;
+      color: #171717;
+    }
+  }
+  a {
+    display: block;
+    color: #15AB90;
+    text-align: center;
+  }
+  .button-green{
+    padding: 8%;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  .password-forgot{
+  text-align: right;
+  }
+}
+
+.input_password {
+  position: relative;
+  top: 10%;
+  right: 20px;
+  /* Adjust this value as needed */
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #171717;
+}
+p{
+  color: red;
+}

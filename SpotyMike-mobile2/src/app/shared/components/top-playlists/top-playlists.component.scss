@@ -1,0 +1,75 @@
+.top-playlist-title {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: semi-bold;
+    color: #171621;
+    z-index: 3;
+    background: transparent;
+  }
+
+  .seeAll-button {
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: medium;
+    color: #15AB90;
+    z-index: 3;
+    background: transparent;
+  }
+
+  .seeAll-button:hover {
+    transform: scale(1.1);
+    }
+
+    .seeAll-button:active {
+        transform: scale(0.9);
+    }
+
+  .container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    background-color: transparent;
+    position: fixed;
+    z-index: 2;
+    top: 84%;
+    left: 5%;
+  }
+
+  .img-playlist {
+    width: 90px;
+    height: 90px;
+    background: #D9D9D9;
+    border-radius: 16px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .title-playlist {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    font-weight: semi-bold;
+    color: #0D062D;
+    position: absolute;
+    margin-top: 110%;
+    width: max-content;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .creator-playlist {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    font-weight: semi-bold;
+    color: #737373;
+    position: absolute;
+    width: max-content;
+    margin-top: 5%;
+    z-index: 2;
+    text-align: center;
+  }

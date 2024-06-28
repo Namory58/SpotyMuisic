@@ -1,0 +1,18 @@
+ion-content {
+  --background: rgb(122,111,249);
+  --background: linear-gradient(180deg, rgba(122,111,249,1) 0%, rgba(255,255,255,1) 50%);
+  .logo{
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 100%; /* Ensure the container takes full height */
+}
+
+ion-router-outlet {
+  flex: 1; /* Ensure the router outlet grows to fill the available space */
+}

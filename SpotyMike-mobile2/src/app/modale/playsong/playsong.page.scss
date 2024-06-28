@@ -1,0 +1,182 @@
+ion-content {
+  --background: rgb(21, 171, 144);
+  --background: linear-gradient(174deg, rgba(21, 171, 144, 1) 0%, rgba(252, 251, 252, 1) 50%);
+}
+
+p {
+  /*
+  text-align: center;
+  color: aliceblue;
+  font-size: 1.4rem;
+  margin-left: 20px;
+  margin-right: 20px;*/
+  text-align: center;
+  color: aliceblue;
+  font-size: 1.4rem;
+  /* margin-left: -23px; */
+  margin-right: -12px;
+  width: 30%;
+}
+
+.dots {
+  font-size: 2rem;
+  margin-top: -3%;
+  margin-left: 4%;
+  margin-right: 12%;
+  padding: 2%;
+  width: 40%;
+
+}
+
+.header-content {
+  margin: 8%;
+}
+
+.img {
+  width: 327px;
+  height: 327px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.space-img {
+  padding: 3%;
+  margin-left: 7%;
+}
+
+ion-icon {
+  font-size: 26px;
+  /* Adjust the size as needed */
+}
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-music {
+  display: flex;
+  justify-content: space-between;
+  /* Distributes space between the icons */
+  align-items: center;
+  /* Centers the icons vertically */
+  padding: 8%;
+  margin: 1%;
+}
+
+.icon-music ion-icon {
+  flex: 1;
+  margin: 0 5px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  margin: 1%;
+}
+
+.back-icon {
+  margin-right: 10px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 154%;
+}
+
+.header-text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: aliceblue;
+  font-size: 1.4rem;
+  margin-left: 16%;
+  width: 100%;
+  margin-right: 0%;
+}
+
+.play-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 30px;
+  height: 75px;
+  margin-top: -32px;
+}
+
+.play-time span {
+  width: 50px;
+  text-align: center;
+}
+
+.ion-range {
+  flex: 1;
+  margin: 0 13px;
+}
+
+.reduced-modal {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  /* Taille réduite de la modal */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+  /* Couleur de fond de la modal réduite */
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.duration {
+  margin-top: 50px;
+  margin-right: -31px;
+  color: red;
+}
+
+.icones {
+  text-align: end;
+  margin-top: -36px;
+}
+
+.titre {
+  text-align: start;
+  margin-right: 0px;
+  margin-left: 24px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.icon-container {
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+h5 {
+  margin-top: 7px;
+}
+
+.informationSong {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -20px;
+  margin-left: 30px;
+  margin-right: 28px;
+  color: #737373;
+  font-size: 16px;
+
+}
+.my-button {
+  width: 60px;
+  height: 54px;
+  border-radius: 100%;
+  /* overflow: hidden; */
+  /* margin-left: 10px; */
+  /* margin-right: 10px; */
+  background-color: #15ab90;
+  color: white;
+  text-align: center;
+}

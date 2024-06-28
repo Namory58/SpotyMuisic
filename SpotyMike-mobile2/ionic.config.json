@@ -1,0 +1,7 @@
+{
+  "name": "SpotyMike-mobile2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

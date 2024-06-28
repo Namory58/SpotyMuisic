@@ -1,0 +1,27 @@
+ion-grid{
+  margin-top: 4%;
+}
+
+ion-row{
+  p {
+    margin-top: 9%;
+    text-align: center; /* Centre le texte sous l'image */
+    font-size: 16px;
+    color: #0D062D;
+  }
+  .title-song{
+    margin: -9%;
+    color: #a3a3a3;;
+    font-size: 1rem;
+  }
+  ion-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+.sapce-img{
+  height:100px;
+  width:100px;
+}

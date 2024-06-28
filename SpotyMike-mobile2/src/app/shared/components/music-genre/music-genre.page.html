@@ -1,0 +1,12 @@
+<ion-grid>
+  <ion-row>
+    @for (item of musicGenre.slice(0,4);track $index) {
+    <ion-col class="genre">
+      <button class="custom-button" [class.first-button]="$index=== 0" [ngClass]="{'active': selectedGenre === item}"
+        (click)="selectGenre(item)">
+        {{item}}
+      </button>
+    </ion-col>
+    }
+  </ion-row>
+</ion-grid>

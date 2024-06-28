@@ -1,0 +1,39 @@
+<ion-content>
+  <ion-header collapse="condense">
+    <div class="header-container">
+      <ion-icon style="color: white; font-size: 1.6rem;" name="chevron-back-outline" class="back-icon"
+        (click)="close()"></ion-icon>
+      <div class="header-text">
+        <p>{{ name }}</p>
+        <span class="dots">...</span>
+      </div>
+    </div>
+    <div class="space-img">
+      <img class="img" [src]="image ||'assets/icon/img.png'">
+    </div>
+    <div class="icon">
+      <h3 class="titre">
+        {{currentTitre}}
+        <h5>{{name}}</h5>
+      </h3>
+      <div class="icon-container">
+        <ion-icon [name]="isFavorite ? 'heart' : 'heart-outline'" (click)="toggleFavorite()"></ion-icon>
+        <ion-icon name="share-social-outline" (click)="Sharednetworks()"></ion-icon>
+      </div>
+    </div>
+    <div class="play-time">
+      <ion-range [max]="duration" [(ngModel)]="currentTime" (ionChange)="seekTo($event)" color="success"></ion-range>
+    </div>
+    <div class="informationSong">
+      <span>{{ formattedCurrentTime }}</span>
+      <span >{{ formattedDurationTime }}</span>
+    </div>
+    <div class="icon-music">
+      <ion-icon name="repeat-outline"></ion-icon>
+      <ion-icon name="play-skip-back-outline"></ion-icon>
+      <ion-icon class="my-button" [name]="play ?'pause-outline' :'play-outline'" (click)="playMusics()"></ion-icon>
+      <ion-icon name="play-skip-forward-outline"></ion-icon>
+      <ion-icon name="shuffle-outline"></ion-icon>
+    </div>
+  </ion-header>
+</ion-content>

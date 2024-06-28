@@ -1,0 +1,19 @@
+<ion-content>
+  <ion-grid>
+    <div class="Lead-field">
+      <ion-icon name="chevron-back-outline" (click)="back()"></ion-icon>
+      <p>Top Songs</p>
+    </div>
+    <div class="container">
+      @for (item of TopSongs; track $index) {
+      <ion-item>
+        <div class="grid" (click)="startSong(item.song_id)">
+          <img [src]="item.image ||'assets/icon/img.png'" class="sapce-img">
+          <span>{{item.title}}</span>
+          <p class="artist-position">{{item.artist.fullname}}</p>
+        </div>
+      </ion-item>
+      }
+    </div>
+  </ion-grid>
+</ion-content>

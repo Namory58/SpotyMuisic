@@ -1,0 +1,63 @@
+.bg-transparent {
+  background: transparent;
+}
+
+form {
+  padding: 0 5%;
+  padding-top: 77%;
+  padding-bottom: 90%;
+  text-align: start;
+
+  ion-list {
+    padding-bottom: 5%;
+
+    ion-label {
+      font-size: 1.1rem;
+      color: #a3a3a3;
+    }
+
+    ion-input {
+      border: 1px solid #E5E5E5 !important;
+      border-radius: 30px;
+      height: 4rem;
+      margin: 10px 0;
+      padding: 0 1px;
+      box-sizing: border-box;
+      color: #171717;
+    }
+
+    .selcet {
+      border-radius: 23px;
+      border: 1px solid #E5E5E5 !important;
+      height: 4rem;
+      margin: 0px 123px;
+      padding: 4px 7px;
+      /* box-sizing: border-box; */
+      color: #171717;
+      padding-right: 6%;
+    }
+
+    .space {
+      padding: 0px 0px;
+      margin: 2px -122px;
+    }
+  }
+  .button-green{
+    padding: 8%;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  p{
+    color: red;
+  }
+  }
+
+  .input_password {
+    position: relative;
+    top: 10%;
+    right: 20px;
+    /* Adjust this value as needed */
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #171717;
+  }

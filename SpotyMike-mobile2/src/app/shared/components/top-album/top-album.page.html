@@ -1,0 +1,11 @@
+<ion-grid>
+  <ion-row>
+    @for (item of listAlbum.slice(0,3) ; track $index) {
+      <ion-col (click)="showerAlbum()"><img [src]="item.cover || 'assets/icon/img.png'" class="sapce-img">
+        <p>{{item.titre }}</p>
+        <p class="title-song">artiste</p>
+      </ion-col>
+    }
+  </ion-row>
+</ion-grid>
+

@@ -1,0 +1,51 @@
+
+<form [formGroup]="bioSection" (ngSubmit)="onSubmit()">
+  <ion-list class="bg-transparent">
+    @if (error) {
+      <p class="error"><ion-icon name="alert-outline"></ion-icon>{{ error}}</p>
+    }
+    <ion-label>Email</ion-label>
+    <ion-input type="Email" formControlName="email" name="email" placeholder="mike@mike.mike"></ion-input>
+    @if (bioSection.get('email')?.invalid && (bioSection.get('email')?.dirty ||bioSection.get('email')?.touched)) {
+    <div>
+      @if(bioSection.get('email')?.errors?.['required'] ){
+      <p class="error"><ion-icon name="alert-outline"></ion-icon>Email require</p>
+      }
+      @else if(bioSection.get('email')?.errors?.['pattern'] ){
+      <p class="error"><ion-icon name="alert-outline"></ion-icon>Format email invalid</p>
+      }
+    </div>
+    }
+    <ion-label>Password</ion-label>
+    <ion-input type="{{showPassword ? 'text' : 'password'}}" formControlName="password" name="password"
+      placeholder="••••••••••••••">
+      <ion-icon class="input_password" slot="end" [name]="showPassword ? 'eye-outline' : 'eye-off-outline'" slot="end"
+        (click)="togglePasswordVisibility()">
+      </ion-icon>
+    </ion-input>
+    @if (bioSection.get('password')?.invalid && (bioSection.get('password')?.dirty
+    ||bioSection.get('password')?.touched)) {
+    <div>
+      @if(bioSection.get('password')?.errors?.['required'] ){
+      <p class="error"><ion-icon name="alert-outline"></ion-icon>Password require</p>
+      }
+      @else if(bioSection.get('password')?.errors?.['pattern'] ){
+      <p class="error"><ion-icon name="alert-outline"></ion-icon>Format password invalid</p>
+      }
+      @else if(bioSection.get('password')?.errors?.['minlength'] ){
+      <p class="error"><ion-icon name="alert-outline"></ion-icon>Size password invalid</p>
+      }
+    </div>
+    }
+  </ion-list>
+  <a type="submit" (click)="openModalpasswordForgot()" class="password-forgot">Mot de passe oublié</a>
+  <ion-button class="button-green" [disabled]="submitForm || !bioSection.valid" type="submit">
+    @if(submitForm){
+    <ion-spinner name="crescent"></ion-spinner>
+    }
+    @else {
+    <span>Se Connecter</span>
+    }
+  </ion-button>
+  <a type="submit" (click)="createAcount()">Pas encore inscrit ?</a>
+</form>

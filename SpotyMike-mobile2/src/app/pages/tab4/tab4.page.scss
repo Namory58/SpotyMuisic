@@ -1,0 +1,26 @@
+ion-content {
+  --background: rgb(21,171,144);
+--background: linear-gradient(174deg, rgba(21,171,144,1) 0%, rgba(252,251,252,1) 50%);
+}
+.page-title {
+  position: absolute;
+  top: 6%;
+  left: 50%; transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;       /* Center the text and icon container */
+  align-items: center;
+  width: 100%;
+  max-width: 600px;              /* Adjust as needed */
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+
+}
+.icone{
+  font-size: 2rem;
+}
+p{
+  margin: 0% 137px;
+}
+

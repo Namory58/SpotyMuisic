@@ -1,0 +1,23 @@
+<ion-content>
+
+  <ion-grid>
+    <div class="Lead-field">
+      <ion-icon name="chevron-back-outline" (click)="back()"></ion-icon>
+      <p>Top Artists</p>
+    </div>
+
+    <div class="container">
+      @for (item of allArtiste; track $index) {
+      <ion-item>
+        <div class="grid" (click)="showProfile(item.fullname)">
+          <img [src]="item.avatar ||'assets/icon/img.png'" class="sapce-img">
+          <span>{{item.fullname}}</span>
+          <p class="artist-position">Artiste</p>
+        </div>
+      </ion-item>
+      }
+
+    </div>
+
+  </ion-grid>
+</ion-content>
