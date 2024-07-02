@@ -28,10 +28,11 @@ export class CridComponent implements OnInit {
       const artiste = await this.firebaseService.getartist(data.artist_id);
       return {
         album_id: data.album_id,
+        artist_id:data.artist_id,
         title: data.title,
         image: data.image,
-        top_song_acount: data.top_song_acount,
         song_id: data.song_id,
+        top_song_acount: data.top_song_acount,
         artist: artiste,
       } as Song;
     }));

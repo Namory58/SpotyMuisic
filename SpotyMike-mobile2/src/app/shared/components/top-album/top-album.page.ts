@@ -23,6 +23,7 @@ export class TopAlbumPage implements OnInit {
   constructor() { }
 
   async ngOnInit() {
+    /*
     const allAlbum = await this.FirebaseService.getTopAlbum();
     this.listAlbum = allAlbum.map((x:any)=>({
       album_id :x.album_id,
@@ -32,7 +33,7 @@ export class TopAlbumPage implements OnInit {
       featuring : x.featuring,
       titre : x.titre,
       top_album_count:x.top_album_count
-    }))
+    }))*/
   }
   showerAlbum() {
     throw new Error('Method not implemented.');

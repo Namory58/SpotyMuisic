@@ -29,6 +29,7 @@ export class ServiceFirebaseService {
     const q = query(this.songs, orderBy("top_song_acount", "desc"), limit(3));
     const querySnapshot = await getDocs(q);
     const songs = querySnapshot.docs.map(doc => doc.data());
+    console.log(songs);
     return songs;
   }
   async getAllSong() {
@@ -64,7 +65,7 @@ export class ServiceFirebaseService {
     const  answer = snapshot.docs.map(doc => doc.data());
     return answer;
   }
-  
+
 }
 
 
